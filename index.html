@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/main.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<div class="todo__box">
+			<form class="todo__form">
+				<input
+					class="todo__add-input"
+					type="text"
+					placeholder="new todo ..."
+				/>
+	
+				<button class="add-btn" type="submit">Add</button>
+			</form>
+		</div>
+		<ul class="todos"></ul>
+
+		<div class="btns">
+			<button class="btn-all">
+				All <strong class="btn-all-text">0</strong>
+			</button>
+			<button class="btn-completed">
+				Completed <strong class="btn-completed-text">0</strong>
+			</button>
+			<button class="btn-uncompleted">
+				Uncompleted <strong class="btn-uncompleted-text">0</strong>
+			</button>
+
+			<button class="btn-clear">Clear</button>
+		</div>
+
+		<template id="todo-template">
+			<li class="todo">
+				<input class="todo__check-input" type="checkbox" />
+
+				<span class="todo__title">Bnmma</span>
+
+				<button class="todo__delete-btn">Delete</button>
+				<button class="todo__edit-btn">Edit</button>
+			</li>
+		</template>
+		<script src="js/utils.js"></script>
+		<script src="js/learn.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
